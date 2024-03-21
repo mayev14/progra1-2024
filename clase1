@@ -1,0 +1,121 @@
+/* 
+    Estructuras de Control
+    Para controlar el orden en que se van desarrollando las acciones, utilizaremos las estructuras de control, que pueden ser de distintos tipos
+
+    * condicionales:  o de selección, que nos permiten elegir entre varias posibilidades en función de una o varias condiciones
+        - if instrucción de selección simple
+        - switch instrucción de selección múltiple
+
+    * bucles: nos permiten repetir una serie de operaciones hasta que se verifique una condición o hayamos dado un número concreto de vueltas
+        - do-while instrucción de iteración con condición final
+        - while instrucción de iteración con condición inicial
+        - for instrucción de iteración especial (similar a las de repetición con contador)
+
+    * de salto: que nos permiten ir a una determinada línea de nuestro algoritmo directamente
+        - break instrucción de ruptura de secuencia (sale del bloque de un bucle o instrucción condicional)
+        - continue instrucción de salto a la siguiente iteración (se emplea en bucles para saltar a la posición donde se comprueban las condiciones)
+        - goto instrucción de salto incondicional (salta a una etiqueta)
+        - return instrucción de retorno de un valor (se emplea en las funciones
+*/
+
+/*
+    Estructura del código fuente
+
+    * include <iostream>
+    Esta línea inicia con almohadilla # y encarga al preprocesador que se incluya una sección
+    de código C++ estándar (bibliotecas o librerías) que permite realizar operaciones de en-
+    trada y salida de datos
+
+    * using namespace std;
+    Esta línea declara un namespace o espacio de nombres. En concreto el namespace std o
+    estándar. Dentro del namespace std están declarados todos los elementos de las bibliotecas
+    estándar.
+    Mediante esta línea podemos usar los elementos de la biblioteca estándar sin necesidad de
+    tener que declararlos cada vez que se usan.
+
+    * int main( )
+    Esta estructura es la función principal que contiene el código. Lo que se escriba dentro de
+    las llaves de esta función es el código fuente en sí, es decir el programa que se ejecutará.
+    La primera palabra int, nos dice el tipo del valor de retorno de la función, en este caso
+    un número entero. La función main siempre devuelve un entero. La segunda palabra es el
+    nombre de la función, en general será el nombre que se usa para realizar el llamado a la
+    función.
+
+    * return 0;
+    La palabra return es reservada propia de C++. Indica al programa que debe abandonar la
+    ejecución de la función y continuar a partir del punto en que se la llamó. El 0 es el valor de
+    retorno de nuestra función. Cuando main retorna el valor 0 indica que todo ha marchado
+    bien.
+*/
+
+#include <iostream>
+using namespace std ;
+
+int main () {
+    cout << " Hola Mundo " << endl ;
+    return 0;
+}
+
+#include <iostream>
+using namespace std ;
+
+int main () {
+
+    // Definimos dos variables a y b del tipo double
+    double a ;
+    double b ;
+    // Se imprime un mensaje al usuario
+    cout << " Ingrese dos numeros " << endl ;
+    // Se leen dos numeros ingresados a traves del teclado
+    cin >> a ;
+    cin >> b ;
+    // Se imprime un mensaje y la suma de los dos numeros
+    cout << " La suma de los numeros ingresados es : " << a + b << endl ;
+
+    return 0;
+} 
+
+#include <iostream>
+using namespace std ;
+
+int main () {
+    const double IVA = 0.12;
+    const double PROPINA = 0.05;
+    double precio ;
+    cout << " Ingrese el valor del consumo " << endl ;
+    cin >> precio ;
+    precio
+    cout << " Su factura con IVA es de : " << precio + precio * IVA
+    << " dolares " << endl ;
+    cout << " Su factura incluida la propina es de : "
+    << precio + precio * ( IVA + PROPINA ) << " dolares "
+    << endl ;
+    cout << " Gracias por su consumo " << endl ;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+    Funciones en C++
+    Básicamente una función puede realizar las mismas acciones que un programa: 
+    - aceptar datos
+    - realizar unos cálculos determinados y, finalmente,
+    - devolver resultados
+
+    Las funciones son invocadas desde otras funciones, con una excepción: la función global main(), que tienen todos los programas en C++. 
+    Permite al compilador conocer donde está el punto inicial de un programa. Por razones obvias, main() no puede ser invocada desde otras funciones.
+    Podemos distinguir 3 características de las funciones en C++:
+    - la definición
+    - la declaración
+    - la llamada
+*/
+
