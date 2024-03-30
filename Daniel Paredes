@@ -1,0 +1,53 @@
+CUADRADO
+#include<iosteam>
+
+main int ()
+{
+
+	int area, perimetro=0;
+
+	cout << "Ingrese la medida de un lado del cuadrado" << endl;
+	cin >> lado;
+
+	perimetro = lado * 4;
+
+	cout << "el premimetro de su cuadrado es" << perimetro << endl;
+
+	return 0;
+
+CIRCULO
+#include <iostream>
+
+int PI = 3.14159;
+
+int main() {
+	
+	int radio;
+	// Ingresar //datos
+	cout << "Ingrese el radio del circulo: ";
+	cin >> radio;
+
+	circunferencia = 2 * PI * radio;
+
+	cout << "La circunferencia del circulo es: " << circunferencia << endl;
+	return 0;
+}
+
+TRIANGULO
+#include <iostream>
+
+
+int main() 
+{
+	int base, altura;
+
+	cout << "Ingrese la longitud de la base del triangulo.";
+	cin >> base;
+
+	cout << "Ingrese la altura del triangulo.";
+	cin >> base;
+
+	 area = (base * altura) / 2;
+	cout << "El area del triangulo es: " << area << endl;
+
+	return 0;
