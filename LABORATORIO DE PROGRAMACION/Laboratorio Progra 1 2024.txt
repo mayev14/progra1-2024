@@ -1,0 +1,214 @@
+#include <iostream>
+#include <math.h>
+//ejercicio 1 : Presentar en pantalla el mensaje "Bienvenidos al curso de programacion 1"// 
+using namespace std;
+
+int main(){
+	
+	printf("Bienvenidos al curso de programacion 1");	
+}
+#include <iostream>
+#include <math.h>
+//ejercicio 2: "La suma de dos numeros enteros"//
+using namespace std;
+
+int main(){
+	
+	int num1, num2, resultado;
+	cout << "Ingrese el primer numero entero: " ;
+	cin >> num1;
+	cout << "Ingrese el segundo numero entero: " ;
+	cin >> num2;
+	
+	resultado = num1 + num2;
+	
+	cout << "El resultado de la suma es: " << resultado ;
+	return 0;	
+}
+
+
+
+
+
+#include <iostream>
+#include <math.h>
+//ejercicio 3: "Hallar la media aritmetica de 3 valores"// 
+using namespace std;
+
+int main(){
+	
+	int num1, num2, num3, media;
+	cout << "Ingrese el primer numero entero: " ;
+	cin >> num1;
+	cout << "Ingrese el segundo numero entero: " ;
+	cin >> num2;
+	cout << "Ingrese el tercer numero entero: " ;
+	cin >> num3;
+	
+	media= (num1+num2+num3)/3 ;
+	
+	cout << "El resultado de la media aritmetica es: " << media ;
+	return 0;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <math.h>
+//ejercicio 4: "Hallar el area de un trapecio ingresando valores por computadora"//
+using namespace std;
+
+int main(){
+	
+	int num1, num2, num3, area;
+	cout << "ingrese el valor de la base mayor" ;
+	cin>> num1 ;
+
+	cout << "ingrese el valor de la base menor" ;
+	cin>> num2 ;
+	
+	cout << "ingrese el valor de la altura" ;
+	cin>> num3 ;
+	
+	area= ((num1+num2)*num3)/2;
+	
+	cout<<"el area del trapecio es:"<< area;
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <math.h>
+//ejercicio 5: "Hallar el interes simple"//
+using namespace std;
+
+int main(){
+	
+		int num1, num3, interes;
+		float num2;
+	cout << "ingrese el valor del capital"<< endl;
+	cin>> num1 ;
+
+	cout << "ingrese el valor del porcentaje de interés (%)" <<endl ;
+	cin>> num2 ;
+	
+	cout << "ingrese el tiempo estimado" << endl ;
+	cin>> num3 ;
+	
+	interes= (num1*num2*num3);
+	
+	cout<<"el interes ganado es de:"<< interes;
+	return 0;
+	
+	
+}
+
+
+
+
+
+
+
+#include <iostream>
+#include <math.h>
+//ejercicio 6: "Hallar el precio del producto sin el IVA"//
+using namespace std;
+float iva = 0.12;
+int main(){
+	
+int pIVA;
+float desc, pSINVA;
+cout<<"Ingrese el precio del producto: " << endl;
+cin >> pIVA ;
+
+desc = pIVA*iva;
+pSINVA = pIVA - desc;
+
+cout<< "El precio del producto sin IVA es: " << pSINVA;
+
+return 0;
+ 
+	
+}
+
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+/*
+int main(int argc, char** argv) 
+{
+	int num1,num2,num3,num4;
+	int mayor;
+	cout<< "ingrese 4 numeros: " << endl;
+	cin>> num1 >> num2 >> num3 >> num4;
+	
+	
+	
+	
+	  if (num2 == num1 > num3 == num1 > num4) 
+	  {
+	  	mayor = num1;
+    } 
+	else if (num2 > num1 == num2 > num3 == num2 > num4) 
+	{
+        mayor= num2;
+    } 
+	else if (num3 > num1 == num3 > num2 == num3 > num4) 
+	{
+        mayor = num3;
+    } 
+	else {
+        mayor = num4;
+                
+    }
+	cout << "el numero mayor es: " << mayor << endl;
+	
+	
+	
+	
+	return 0;
+}
+*/
+/*
+int main() {
+    for (int i = 1; i <= 30; i++) {
+        if (i % 2 == 0) {
+            cout << i << " ";
+        }
+    }
+    return 0;
+}
+*/
+ 
+int main() {
+    int numero;
+
+    cout << "Ingrese un número entero: ";
+    cin >> numero;
+
+    
+    if (numero % 2 == 0) {
+        cout << "El número ingresado es par." << endl;
+    } else {
+        cout << "El número ingresado es impar." << endl;
+    }
+
+    return 0;
+}
